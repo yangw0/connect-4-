@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="johnny yang">
+	<meta name="date" content="11/11/23">
+	<link rel = "stylesheet" href="connect4.css">
+    <script src="connect4.js" charset="utf-8"></script>
+
+	<title>Connect Four</title>
+    
+</head>
+<body>
+	<h1> Connect 4</h1>
+	<h2 id = "winner"></h2>
+    <div id= "board"></div>
+	<div><button id="clearBoardButton" onclick="clearBoard()">Clear Board</button></button>
+
+	
+	</div>
+	
+</body>
+
+<!-- this is the layout of the scoreboard, 2 teams with 3 buttons each,
+	 add, subtract, and reset-->
+<body>
+	<div class = "scoreboard">
+		<div class = "scoreboard_team scoreboard_team--red"> team red</div>
+		<div class = "scoreboard_team scoreboard_team--yellow">team yellow</div>
+		<div class = "scoreboard_scoreRed" > 0 </div>
+		<div class = "scoreboard_scoreYellow" > 0 </div>
+
+		<div class = "scoreboard_controls_red" > 
+			<button id="scoreboard_controls-buttonRed-"> - </button> 
+			<button id="scoreboard_controls-buttonRedReset"> reset </button>
+			<button id="scoreboard_controls-buttonRed+"> + </button> 
+		</div>
+		
+
+
+		<div id = "scoreboard_controls_yellow" > 
+			<button id="scoreboard_controls-buttonYellow-"> - </button> 
+			<button id="scoreboard_controls-buttonYellowReset"> reset </button>
+			<button id="scoreboard_controls-buttonYellow+"> + </button> 
+		</div>
+
+		
+
+	</div>
+	<!--button to save score to csv file-->
+	<div><button id="saveCSVButton" onclick="saveScoresToCSV()">Save Score</button></div>
+	<script src = "scoreboard.js" charset="utf-8"> </script>
+	
+
+</body>

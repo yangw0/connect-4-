@@ -1,0 +1,105 @@
+
+
+body{
+    font-family: sans-serif;
+    text-align: center;
+    background-image: url(iStockpixelparticle-524328479.jpg);
+
+} 
+/*this is how the board will appear*/
+#board {
+    height: 540px;
+    width: 630px;
+    background-color: blue;
+    border: 10px solid navy;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* tiles are blank until a peice is selected to cover it*/
+.tile {
+
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+
+    /* Circle */
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid navy;
+}
+
+.red-piece {
+    background-color: red;
+}
+
+.yellow-piece {
+    background-color: yellow;
+}
+/* color for heading one*/
+h1{
+    color: rgb(52, 235, 168);
+    
+    font-family: 'Quicksand', sans-serif;
+}
+/* color for heading two*/
+h2{
+    color:peru;
+}
+/*score board's styles*/
+.scoreboard{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    width: 350px;
+
+}
+.scoreboard_team,
+.scoreboard_score{
+    padding: 15px;
+    text-align: center;
+}
+
+.scoreboard{
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+.scoreboard_team--red{
+    color: crimson;
+}
+
+.scoreboard_team--yellow{
+    color: yellow;
+}
+
+.scoreboard_scoreRed {
+    font-size: 2em;
+    color:aqua
+}
+.scoreboard_scoreYellow {
+    font-size: 2em;
+    color:aqua
+    
+}
+
+.scoreboard_control {
+    display: flex;
+}
+
+.scoreboard_control-button{
+    flex-grow: 1;
+    border: 1px;
+    background: white;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+.scoreboard_control-button:hover {
+    background-color: #ddd;
+}
+
+.scoreboard_control-button:active {
+    background-color: #ccc;
+}
+
